@@ -2,65 +2,48 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Activity 3</title>
-
-    <link rel="stylesheet" href="./assets/css/style.css" />
-
-    <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-
-      <!-- CDNJS -->
-      <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
-        integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
-        crossorigin="anonymous"
-        referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Buenard:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <title>Header and Footer</title>
   </head>
-
   <body>
-    <video preload="auto" autoplay loop
-src="./assets/video/Gengar Live Wallpaper.mp4" >
-</video>
-    <!-- TODO: Make a landing page composed of a title, description and 2 buttons(Header & Footer) -->
-    <div class="container">
-      <div class="pokemon">
-        <div class="socials">
-          <img src="./assets/img/Pokeball.png" alt="" class="pokeball" />
-          <a href="https://github.com/zyx-0314/">
-            <i class="bi bi-github"></i>
-          </a>
-          <a href="mailto: irramirez@feutech.edu.ph">
-            <i class="bi bi-envelope"></i>
-          </a>
-        </div>
-        <img class="title" src="./assets/img/pokemon.png" alt="" />
-        <img class="gengar" src="./assets/img/gengar-wallpaper.png" alt="" />
-      </div>
-      <div class="content">
-        <h3 class="subtitle">Seatwork # 003</h3>
-        <h1 class="title">Headers and Footers</h1>
-        <p class="description">
-          This is for demonstrating skills in HTML and CSS with Multiple Pages,
-          Effects and Container Manipulations. Providing a Different Versions of
-          Headers and Footers.
-        </p>
-        <nav>
-          <a href="./pages/header-gallery/index.html" class="button ghost"
-            >Header</a
-          >
-          <a href="./pages/footer-gallery/index.html" class="button poison"
-            >Footer</a
-          >
+    <section class="hero__section">
+      <header>
+        <nav class="navbar">
+          <div class="navbar__menu_container">
+            <a href="#" class="link">Home</a>
+            <a href="#" class="link">About</a>
+            </a>
+          </div>
         </nav>
+      </header>
+      <div class="hero__section_container">
+        <h2 class="hero__section_subtitle">
+          Seatwork 3
+        </h2>
+        <h1 class="hero__section_title">Header and Footer</h1>
+        <p class="hero_section_desc">Website that contains Header and Footer Designs</p>
       </div>
-    </div>
-  </body>
-</html>
+    </section>
+
+    <section class="container content1">
+    <a href="/pages/header-gallery/index.html">  
+      <button class="card">
+        <img src="https://livewallp.com/wp-content/uploads/2021/08/Genshin-Impact-Traveler-Aether.jpg" alt="" />
+        <h2>Header</h2>
+        <p>Header designs with the Static Header and Animated ones</p>
+      </button>
+    </a>
+    <a href="/pages/footer-gallery/index.html">
+      <button class="card">
+        <img src="https://wallpapers.com/images/hd/genshin-impact-lumine-in-landscape-6av6q274hgozl7ht.jpg" alt="" />
+        <h2>Footer</h2>
+        <p>Footer designs with the Static Header and Animated ones</p>
+      </button>
+    </a>
+    </section>
