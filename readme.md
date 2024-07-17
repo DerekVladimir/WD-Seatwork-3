@@ -10,7 +10,7 @@
   <h3 align="center">Seatwork 3: Footer & Header</h3>
 </div>
 <div align="center">
-  This is for demonstrating skills in HTML and CSS with Multiple Pages, Effects and Container Manipulations. Providing a Different Versions of Headers and Footers.
+ This Seatwork 3 demonstrates my skills on HTML and CSS. The website showcases different types of footers and headers.
 </div>
 
 <br />

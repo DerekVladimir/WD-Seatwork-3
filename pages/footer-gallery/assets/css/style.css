@@ -2,31 +2,42 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    }
-    
-    .header-page {
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.header-page {
     width: 100%;
     background-color: #58c4cc;
     text-align: center;
     padding: 20px 0;
-    }
-    
-    .header-page h1, .header-page a {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.header-page h1, .header-page a {
     color: rgb(232, 255, 255);
     justify-content: center;
     display: inline-block;
     margin: 0 10px;
     text-decoration: none;
-    }
-    
-    /* General styling for all designs */
-    section {
+    font-family: 'Montserrat', sans-serif;
+    transition: color 0.3s ease-in-out;
+}
+
+.header-page a:hover {
+    color: #fff;
+}
+
+/* General styling for all designs */
+section {
     padding: 20px;
     margin: 20px 0;
     background-color: #f0f0f0;
-    }
-    
-    .design1 {
+}
+
+.design1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -35,61 +46,40 @@
     margin-bottom: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 -4px 6px rgba(0, 0, 0, 0.1); /* Drop shadow */
     position: relative; /* To position the "inside out" text */
-    }
-    
-    .header-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 18px;
-    color: rgba(0, 0, 0, 0.5);
-    }
-    
-    .logo1 img {
+}
+
+.logo1 img {
     width: 100px;
     height: auto;
     position: right; 
-    }
-  
-    .logo2 img {
-    width: 100px; 
-    height: auto; 
-    position: relative;
-    }
-      
-    
-    
-    .buttons1 {
+}
+
+.buttons1 {
     display: flex;
     gap: 20px; /* Space between nav buttons */
     list-style: none;
     padding: 0;
-    font-family: 'Titillium Web';
+    font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     text-align: center;
     font-weight: 600;
-    }
-    
-    .buttons1 li {
-    display: inline-block;
-    list-style: outside none none;
-    margin: .5em 1em;
-    padding: 0;
-    }
-    
-    .buttons1 a {
+}
+
+.buttons1 a {
     padding: .5em .8em;
-    color: rgba(255, 255, 255, .5);
+    color: #000;
     position: relative;
     text-decoration: none;
     font-size: 20px;
-    color: #000; /* Ensure text color is black */
-    }
-    
-    
-    
-    .design2 {
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.buttons1 a:hover {
+    color: #58c4cc;
+    transform: scale(1.1);
+}
+
+.design2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -97,130 +87,160 @@
     padding: 20px 10%;
     background-color: rgba(85, 87, 87, 0.8);
     margin-bottom: 20px;
-    }
-    
-    .logo {
+}
+
+.logo {
     font-size: 36px;
     font-weight: 700;
     text-decoration: none;
     color: rgb(255, 255, 255);
-    }
-    
-    .navbar {
+}
+
+.navbar {
     display: flex;
     gap: 25px;
     list-style: none;
     padding: 0;
-    }
-    
-    .navbar a {
+}
+
+.navbar a {
     font-size: 22px;
     color: rgb(255, 255, 255);
     text-decoration: none;
     font-weight: 500;
-    transition: .3s;
-    }
-    
-    
-    
-    /* Design #3 */
-    .design3 {
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+    color: #58c4cc;
+    transform: scale(1.1);
+}
+
+/* Design #3 */
+.design3 {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #d0d0d0; /* Example background color */
     padding: 20px;
     margin-bottom: 20px;
-    }
-    
-    .buttons3 {
+}
+
+.buttons3 {
     display: flex;
     gap: 20px;
-    }
-    
-    .buttons3 a {
+}
+
+.buttons3 a {
     font-size: 18px;
     color: #000;
     text-decoration: none;
     padding: 10px;
-    }
-    
-    .buttons3 .logo {
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.buttons3 .logo {
     font-weight: bold;
     font-size: 22px;
-    }
-    
-    /* Design #4 */
-    .design4 {
+}
+
+.buttons3 a:hover {
+    color: #58c4cc;
+    transform: scale(1.1);
+}
+
+/* Design #4 */
+.design4 {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #c0c0c0; /* Example background color */
     padding: 20px;
     margin-bottom: 20px;
-    }
-    
-    .buttons4 {
+}
+
+.buttons4 {
     display: flex;
     justify-content: space-between;
     width: 100%;
     align-items: center;
-    }
-    
-    .buttons4 .nav-links {
+}
+
+.buttons4 .nav-links {
     display: flex;
     gap: 20px;
-    }
-    
-    .buttons4 a {
+}
+
+.buttons4 a {
     font-size: 18px;
     color: #000;
     text-decoration: none;
     padding: 10px;
-    }
-    
-    .buttons4 .logo {
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.buttons4 .logo {
     font-weight: bold;
     font-size: 22px;
-    }
-    
-    .design5 {
+}
+
+.buttons4 a:hover {
+    color: #58c4cc;
+    transform: scale(1.1);
+}
+
+/* Design #5 */
+.design5 {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px;
     margin-bottom: 20px;
     background-color: #ffffff; /* Example background color */
-    }
-    
-    .side-header {
+}
+
+.side-header {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    }
-    
-    .logo5 img {
+}
+
+.logo5 img {
     width: 100px; /* Adjust the size as needed */
     height: auto; /* Maintains aspect ratio */
     margin-bottom: 20px;
-    }
-    
-    .menu5 {
+}
+
+.menu5 {
     list-style: none;
     padding: 0;
-    }
-    
-    .menu5 li {
+}
+
+.menu5 li {
     margin-bottom: 10px;
-    }
-    
-    .menu5 a {
+}
+
+.menu5 a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
     font-size: 18px;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.menu5 a:hover {
+    color: #58c4cc;
+    transform: scale(1.1);
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
     }
-    
-    .menu5 a:hover {
-    color: #555;
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
+}
