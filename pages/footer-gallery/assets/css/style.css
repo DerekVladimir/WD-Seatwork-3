@@ -18,7 +18,6 @@ body {
 
 .header-page h1, .header-page a {
     color: rgb(232, 255, 255);
-    justify-content: center;
     display: inline-block;
     margin: 0 10px;
     text-decoration: none;
@@ -37,133 +36,155 @@ section {
     background-color: #f0f0f0;
 }
 
-.design1 {
+.footer-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #ffffff; /* White background */
+    background-color: #ffffff;
     padding: 20px;
     margin-bottom: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 -4px 6px rgba(0, 0, 0, 0.1); /* Drop shadow */
-    position: relative; /* To position the "inside out" text */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
 }
 
-.logo1 img {
+.footer-image img {
     width: 100px;
     height: auto;
-    position: right; 
+    transition: transform 0.3s ease-in-out;
 }
 
+.footer-image img:hover {
+    transform: scale(1.1);
+}
+
+/* Design #1 */
 .buttons1 {
     display: flex;
-    gap: 20px; /* Space between nav buttons */
+    gap: 20px;
     list-style: none;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
-    text-align: center;
-    font-weight: 600;
+    font-weight: 700;
+    color: #FF5733; /* Distinct color */
 }
 
 .buttons1 a {
     padding: .5em .8em;
-    color: #000;
-    position: relative;
+    color: #FF5733;
     text-decoration: none;
     font-size: 20px;
     transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.buttons1 a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #FF5733;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.buttons1 a:hover::before {
+    transform: translateX(0);
 }
 
 .buttons1 a:hover {
-    color: #58c4cc;
-    transform: scale(1.1);
+    color: #fff;
 }
 
-.design2 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 20px 10%;
-    background-color: rgba(85, 87, 87, 0.8);
-    margin-bottom: 20px;
-}
-
-.logo {
-    font-size: 36px;
-    font-weight: 700;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-}
-
+/* Design #2 */
 .navbar {
     display: flex;
     gap: 25px;
     list-style: none;
     padding: 0;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #33FF57; /* Distinct color */
 }
 
 .navbar a {
     font-size: 22px;
-    color: rgb(255, 255, 255);
+    color: #33FF57;
     text-decoration: none;
-    font-weight: 500;
+    position: relative;
     transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
+.navbar a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #33FF57;
+    left: 0;
+    bottom: 0;
+    transition: width 0.3s ease-in-out;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
 .navbar a:hover {
-    color: #58c4cc;
-    transform: scale(1.1);
+    color: #fff;
 }
 
 /* Design #3 */
-.design3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #d0d0d0; /* Example background color */
-    padding: 20px;
-    margin-bottom: 20px;
-}
-
 .buttons3 {
     display: flex;
     gap: 20px;
+    list-style: none;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #3357FF; /* Distinct color */
 }
 
 .buttons3 a {
     font-size: 18px;
-    color: #000;
+    color: #3357FF;
     text-decoration: none;
     padding: 10px;
+    position: relative;
     transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
-.buttons3 .logo {
-    font-weight: bold;
-    font-size: 22px;
+.buttons3 a::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background-color: #3357FF;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.buttons3 a:hover::before {
+    transform: translateY(0);
 }
 
 .buttons3 a:hover {
-    color: #58c4cc;
-    transform: scale(1.1);
+    color: #fff;
 }
 
 /* Design #4 */
-.design4 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #c0c0c0; /* Example background color */
-    padding: 20px;
-    margin-bottom: 20px;
-}
-
 .buttons4 {
     display: flex;
     justify-content: space-between;
     width: 100%;
     align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #FF33A8; /* Distinct color */
 }
 
 .buttons4 .nav-links {
@@ -173,64 +194,72 @@ section {
 
 .buttons4 a {
     font-size: 18px;
-    color: #000;
+    color: #FF33A8;
     text-decoration: none;
     padding: 10px;
+    position: relative;
     transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
-.buttons4 .logo {
-    font-weight: bold;
-    font-size: 22px;
+.buttons4 a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #FF33A8;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.buttons4 a:hover::before {
+    transform: scaleX(1);
 }
 
 .buttons4 a:hover {
-    color: #58c4cc;
-    transform: scale(1.1);
+    color: #fff;
 }
 
 /* Design #5 */
-.design5 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    margin-bottom: 20px;
-    background-color: #ffffff; /* Example background color */
-}
-
-.side-header {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.logo5 img {
-    width: 100px; /* Adjust the size as needed */
-    height: auto; /* Maintains aspect ratio */
-    margin-bottom: 20px;
-}
-
 .menu5 {
+    display: flex;
+    gap: 20px;
     list-style: none;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #FF8C33; /* Distinct color */
 }
 
-.menu5 li {
-    margin-bottom: 10px;
-}
-
-.menu5 a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
+.menu5 li a {
     font-size: 18px;
+    color: #FF8C33;
+    text-decoration: none;
+    padding: 10px;
+    position: relative;
     transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
-.menu5 a:hover {
-    color: #58c4cc;
-    transform: scale(1.1);
+.menu5 li a::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #FF8C33;
+    transform: translateX(-50%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu5 li a:hover::before {
+    transform: translateX(0);
+}
+
+.menu5 li a:hover {
+    color: #fff;
 }
 
 /* Animation */
